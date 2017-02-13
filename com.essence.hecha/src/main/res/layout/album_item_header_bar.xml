@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/header_bar_photo_browse"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/normal_bar_height"
+        android:background="@color/common_title_bg" >
+
+        <ImageView
+            android:id="@+id/header_bar_photo_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="12.0dip"
+            android:paddingRight="5.0dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back_white" />
+
+        <TextView
+            android:id="@+id/header_bar_photo_count"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@id/header_bar_photo_back"
+            android:gravity="center"
+            android:layout_marginLeft="20dip"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/normal_text_size" />
+
+        
+        
+        <ImageView
+            android:id="@+id/header_bar_photo_to_camera"
+            android:layout_width="48.0dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="-2.0dip"
+            android:padding="12.0dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_back_to_camera_normal" />
+    </RelativeLayout>
+
+</LinearLayout>
