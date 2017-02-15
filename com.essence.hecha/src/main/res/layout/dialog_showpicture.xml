@@ -4,12 +4,9 @@
     android:layout_height="fill_parent"
     android:background="#000"
     android:gravity="center" >
-
-
-
     <ImageView
         android:id="@+id/showProductPicture"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content" />
-
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"/>
 </LinearLayout>

@@ -31,6 +31,9 @@ public class TitleBarWidget extends FrameLayout{
 	
 	private void inite(){
 		TextView textView = (TextView) findViewById(R.id.widget_titlebar_name);
+		if (imag!=null&&imag.length()>5){
+			titleName=titleName+" 图示";
+		}
 		textView.setText(titleName);
 		barLinearLayout = (LinearLayout) findViewById(R.id.widget_titlebar_bar);
 		barLinearLayout.setOnClickListener(new OnClickListener() {
@@ -39,6 +42,7 @@ public class TitleBarWidget extends FrameLayout{
                showPicture(imag);
 			}
 		});
+
 	}
 
 	private void showPicture(String imagPath){
